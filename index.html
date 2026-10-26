@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Helper Bot</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <h1>AI Helper Bot</h1>
+    <p class="subtitle">
+      Your AI assistant for jokes, motivation, and daily tips.
+    </p>
+
+    <div class="buttons">
+      <button type="button" data-endpoint="joke">
+        😂 Tell Me a Joke
+      </button>
+
+      <button type="button" data-endpoint="motivation">
+        💪 Motivate Me
+      </button>
+
+      <button type="button" data-endpoint="tip-of-the-day">
+        💡 Tip of the Day
+      </button>
+    </div>
+
+    <p id="status" role="status" aria-live="polite"></p>
+
+    <section id="result" hidden>
+      <h2 id="resultTitle"></h2>
+      <p id="resultText"></p>
+    </section>
+  </main>
+</body>
+</html>
